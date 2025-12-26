@@ -7,7 +7,7 @@ import streamlit as st
 def make_diabetes_map():
     try:
         # Baca file CSV
-        df = pd.read_csv('venv/chart/diabetes_world_data.csv')
+        df = pd.read_csv('diabetes_world_data.csv')
         
         # Hapus baris kosong
         df = df.dropna(subset=['Location', 'Value'])
